@@ -23,7 +23,7 @@ test.beforeEach(async ({ page }) => {
   });
 });
 
-for (let index = 0; index < 20; index++) {
+for (let index = 0; index < 50; index++) {
   test(`check location.replace code 2-${index}`, async ({ page }) => {
     await page.goto('https://mikhail-shafigullin.github.io/');
     await page.locator('#test-promise-location-replace-timeout-before').click();
